@@ -1,0 +1,13 @@
+@model IEnumerable<AppMedicineTracker.Models.Medicine>
+
+@{
+    ViewData["Title"] = "Today's Medications";
+}
+
+<h1>Today's Medications</h1>
+
+<div>
+    @foreach(var item in Model) {
+        @Html.DisplayFor(modelItem => item.Name)<br>
+    }
+</div>
